@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EJERCICIO_1.MainPage"
+             BackgroundColor="#f8c291">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Padding="20" Spacing="15">
+
+            <Label
+                Text="Datos y Tipos de Datos 📊"
+                FontSize="26"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="red" />
+
+            <Entry x:Name="InputField"
+                   Placeholder="Ingrese un valor"
+                   PlaceholderColor="Gray"
+                   TextColor="black"
+                   BackgroundColor="#FFFFE0"
+                   HeightRequest="50" />
+
+            <Button Text="Iniciar"
+                    x:Name="DetermineButton"
+                    BackgroundColor="black"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="8"
+                    HeightRequest="50"
+                    Clicked="OnDetermineDataTypeClicked" />
+            <!-- El comentario problemático ha sido eliminado de la línea anterior -->
+
+            <Frame x:Name="ResultFrame"
+                   BackgroundColor="#90EE90"
+                   Padding="15"
+                   CornerRadius="8"
+                   IsVisible="False">
+                <Label x:Name="ResultLabel"
+                       Text=""
+                       FontSize="18"
+                       TextColor="black"
+                       HorizontalTextAlignment="Center" />
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
